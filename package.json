@@ -7,7 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+<<<<<<< HEAD
     "build:prod": "ng build --configuration production --base-href https://www.gsn-nettoyage.fr/",
+=======
+
+    "build:prod": "ng build --configuration production",
+>>>>>>> 7e613e8539caac79462be7cd1ec2f2cabdd67d44
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
