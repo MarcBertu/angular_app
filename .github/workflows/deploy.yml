@@ -28,5 +28,6 @@ jobs:
           script: |
             cd angular_app
             npm install
+            git pull origin main
             npm run build:prod
             
