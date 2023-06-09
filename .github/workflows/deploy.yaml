@@ -32,4 +32,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             rm -R htdocs/*
-            mv ./dist/* htdocs/
+            mv ./dist/* ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}htdocs/
