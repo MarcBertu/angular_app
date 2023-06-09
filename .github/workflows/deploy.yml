@@ -30,4 +30,4 @@ jobs:
             npm install
             git pull origin main
             npm run build:prod
-            
+            cp dist/ /
