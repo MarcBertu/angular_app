@@ -17,12 +17,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build:prod
-
       - name: Copy compiled directory to SSH server
         uses: appleboy/ssh-action@master
         with:
@@ -31,4 +25,7 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            ls
+            cd angular_app
+            npm install
+            npm run build:prod
+            
